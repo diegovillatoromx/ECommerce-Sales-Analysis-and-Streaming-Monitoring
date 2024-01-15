@@ -7,7 +7,7 @@ As a Senior Data Engineer specializing in AWS, I have designed the "ECommerce Sa
 
 - [Description](#description)
 - [Architecture](#architecture)
-- [Datasets](#datasets)
+- [Dataset](#dataset)
 - [Methodology](#methodology)
 - [Modular Code Overview](#modular-code-overview)
   - [Data Generation](#data-generation)
@@ -92,6 +92,11 @@ The architecture's readiness to handle large data volumes and its potential for 
 
 In conclusion, the "ECommerce Sales Analysis and Streaming Monitoring" project, designed by a Senior Data Engineer in AWS, provides a robust, scalable, and resilient solution for e-commerce businesses to harness the power of real-time data analytics for informed decision-making, competitive advantage, and long-term growth.
 
+## Dataset
+
+## Methodology
+
+## Modular Code Overview
 
 
 ```graphql
