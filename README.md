@@ -1,6 +1,24 @@
 # ECommerce-Sales-Analysis-and-Streaming-Monitoring
 This repository hosts a suite of tools for real-time sales data analysis and monitoring for an e-commerce platform. It includes AWS-powered data pipeline scripts for data ingestion, processing, and storage, along with Grafana dashboards for visual insights.  
 
+## Table of Contents
+
+- [Description](#description)
+- [Architecture](#architecture)
+- [Datasets](#datasets)
+- [Methodology](#methodology)
+- [Modular Code Overview](#modular-code-overview)
+  - [Data Generation](#data-generation)
+  - [AWS Infrastructure](#aws-infrastructure)
+  - [Data Processing](#data-processing)
+  - [Monitoring](#monitoring)
+  - [AWS Services](#aws-services)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+
 
 ```graphql
 ECommerce-Sales-Analysis-and-Streaming-Monitoring/
