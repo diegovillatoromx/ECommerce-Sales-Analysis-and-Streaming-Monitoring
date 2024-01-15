@@ -5,32 +5,42 @@ This repository hosts a suite of tools for real-time sales data analysis and mon
 ```graphql
 ECommerce-Sales-Analysis-and-Streaming-Monitoring/
 ├── data_generation/
-│   ├── app_simulation.py             # Script de Python para simular la generación de datos de ventas
-│   └── requirements.txt              # Dependencias de Python necesarias para el script de generación de datos
+│   ├── app_simulation.py             # Python script to simulate sales data generation
+│   └── requirements.txt              # Python dependencies required for the data generation script
 ├── aws_infrastructure/
 │   ├── boto3_scripts/
-│   │   ├── create_kinesis_stream.py  # Script de boto3 para crear Kinesis Data Stream
-│   │   ├── create_firehose.py        # Script de boto3 para crear Kinesis Firehose Delivery Stream
-│   │   └── create_s3_bucket.py       # Script de boto3 para crear S3 Bucket
-│   ├── cli_scripts/
-│   │   └── setup_infrastructure.sh    # AWS CLI scripts para configurar recursos que no se pueden hacer con boto3
-│   └── config/
-│       ├── credentials.json          # Credenciales de AWS y configuración regional
-│       ├── kinesis_config.json       # Configuración para Kinesis Data Stream
-│       ├── firehose_config.json      # Configuración para Kinesis Firehose Delivery Stream
-│       └── s3_config.json            # Configuración para S3 bucket
+│   │   ├── create_kinesis_stream.py  # Boto3 script to create Kinesis Data Stream
+│   │   ├── create_firehose.py        # Boto3 script to create Kinesis Firehose Delivery Stream
+│   │   ├── create_kinesis_analytics.py # Boto3 script to create Kinesis Data Analytics
+│   │   ├── create_s3_bucket.py       # Boto3 script to create S3 Bucket
+│   │   └── create_lambda_function.py  # Boto3 script to create Lambda function
+│   └── cli_scripts/
+│       └── setup_infrastructure.sh    # AWS CLI scripts to set up resources that cannot be done with Boto3
 ├── data_processing/
 │   ├── glue_jobs/
-│   │   └── data_transformation.py    # Script de AWS Glue para la transformación de datos
+│   │   └── data_transformation.py    # AWS Glue script for data transformation
 │   └── athena_queries/
-│       └── query_definitions.sql     # Definiciones de consultas SQL para Athena
+│       └── query_definitions.sql     # SQL query definitions for Athena
 ├── monitoring/
 │   ├── cloudwatch/
-│   │   └── monitoring_config.json    # Configuración de monitoreo para CloudWatch
+│   │   └── monitoring_config.json    # Configuration for CloudWatch monitoring
 │   └── grafana/
 │       └── dashboards/
-│           └── sales_dashboard.json  # Definición del dashboard de Grafana para visualización de datos
-├── .gitignore                        # Archivo para excluir archivos y carpetas de git
-└── README.md                         # Documentación sobre el proyecto, configuración y despliegue
+│           └── sales_dashboard.json  # Grafana dashboard definition for data visualization
+├── aws_services/
+│   ├── sns/
+│   │   └── send_sns_message.py       # Python script to send SNS messages from Lambda
+├── config/
+│   ├── credentials.json              # AWS credentials and regional configuration
+│   ├── kinesis_ingestion_config.json # Configuration for Kinesis Data Stream ingestion
+│   ├── kinesis_processed_config.json # Configuration for Kinesis Data Stream processed
+│   ├── kinesis_analytics_config.json # Configuration for Kinesis Data Analytics
+│   ├── firehose_config.json          # Configuration for Kinesis Firehose Delivery Stream
+│   ├── s3_config.json                # Configuration for S3 bucket
+│   ├── lambda_config.json            # Configuration for Lambda function
+│   ├── athena_config.json            # Configuration for AWS Athena
+│   └── sns_config.json               # Configuration for Amazon SNS
+├── .gitignore                        # File to exclude files and folders from Git
+└── README.md                         # Project documentation, setup, and deployment information
 
 ```
