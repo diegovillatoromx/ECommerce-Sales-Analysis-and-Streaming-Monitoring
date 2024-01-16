@@ -16,7 +16,6 @@ As a Senior Data Engineer specializing in AWS, I have designed the "ECommerce Sa
   - [AWS Services](#aws-services)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Description
@@ -183,3 +182,33 @@ ECommerce-Sales-Analysis-and-Streaming-Monitoring/
 └── README.md                         # Project documentation, setup, and deployment information
 
 ```
+## Usage
+
+To use this project, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Set up the necessary AWS credentials and configurations as specified in the `config/` directory.
+3. Run the scripts in the respective directories to create AWS resources, generate and process data, and set up monitoring.
+4. Explore the codebase to understand the modular structure and adapt it to your specific use case.
+5. Refer to the documentation and comments in the code for detailed instructions on customization and configuration.
+
+## Contributing
+
+We welcome contributions to improve this project! If you would like to contribute, please follow these guidelines:
+
+1. Fork the repository to your own GitHub account.
+2. Create a new branch from the `main` branch for your feature or bug fix.
+3. Make your changes and test thoroughly.
+4. Ensure your code follows the project's coding standards and style.
+5. Commit your changes with clear and concise commit messages.
+6. Create a pull request back to the `main` branch of the original repository.
+7. Provide a detailed description of your changes in the pull request.
+
+We appreciate your contributions and efforts to make this project better.
+
+## Contact
+
+If you have any questions or need further assistance, please don't hesitate to contact us:
+
+- [Diego Villatoro](mailto:diegovillatoromx@gmail.com)
+- [Project Repository](https://github.com/diegovillatoromx/ECommerce-Sales-Analysis-and-Streaming-Monitoring/)
