@@ -144,7 +144,8 @@ This robust methodology is essential for the success of e-commerce businesses, p
 ECommerce-Sales-Analysis-and-Streaming-Monitoring/
 ├── data_generation/
 │   ├── app_simulation.py             # Python script to simulate sales data generation
-│   └── requirements.txt              # Python dependencies required for the data generation script
+│   ├── requirements.txt              # Python dependencies required for the data generation script
+│   └── utils.py                      # Functions for generating events and users
 ├── aws_infrastructure/
 │   ├── boto3_scripts/
 │   │   ├── create_kinesis_stream.py  # Boto3 script to create Kinesis Data Stream
