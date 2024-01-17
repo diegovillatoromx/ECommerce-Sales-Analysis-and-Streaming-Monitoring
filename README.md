@@ -149,6 +149,7 @@ ECommerce-Sales-Analysis-and-Streaming-Monitoring/
 ├── aws_infrastructure/
 │   ├── boto3_scripts/
 │   │   ├── kinesis_stream_ingestion.py  # Boto3 script to create Kinesis Data Stream ingestion
+│   │   ├── s3_stream_ingestion.py       # Boto3 script to create Bucket s3 ingestion
 │   └── cli_scripts/
 │       └── setup_infrastructure.sh    # AWS CLI scripts to set up resources that cannot be done with Boto3
 ├── data_processing/
