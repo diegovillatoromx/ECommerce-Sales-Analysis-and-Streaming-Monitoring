@@ -148,11 +148,7 @@ ECommerce-Sales-Analysis-and-Streaming-Monitoring/
 │   └── purchase_data_generation.py   # Functions for generating events and users
 ├── aws_infrastructure/
 │   ├── boto3_scripts/
-│   │   ├── create_kinesis_stream.py  # Boto3 script to create Kinesis Data Stream
-│   │   ├── create_firehose.py        # Boto3 script to create Kinesis Firehose Delivery Stream
-│   │   ├── create_kinesis_analytics.py # Boto3 script to create Kinesis Data Analytics
-│   │   ├── create_s3_bucket.py       # Boto3 script to create S3 Bucket
-│   │   └── create_lambda_function.py  # Boto3 script to create Lambda function
+│   │   ├── kinesis_stream_ingestion.py  # Boto3 script to create Kinesis Data Stream ingestion
 │   └── cli_scripts/
 │       └── setup_infrastructure.sh    # AWS CLI scripts to set up resources that cannot be done with Boto3
 ├── data_processing/
