@@ -35,7 +35,7 @@ The **ECommerce Sales Analysis and Streaming Monitoring** project aims to addres
 
 In summary, "ECommerce Sales Analysis and Streaming Monitoring" is a project that demonstrates how cloud automation and real-time analysis can drive competitiveness and efficiency in modern e-commerce. The ability to make informed decisions and adapt quickly to changing market conditions is crucial for success in the digital era.
 
-
+ 
 ## Architecture
 
 The architecture of this project is designed to be highly scalable, resilient, and modular. It encompasses the following key components:
