@@ -8,7 +8,7 @@ As a Senior Data Engineer specializing in AWS, I have designed the "ECommerce Sa
 - [Architecture](#architecture) 
 - [Dataset](#dataset)
 - [Methodology](#methodology)
-- [Modular Code Overview](#modular-code-overview)
+- [Modular Code Overview](#modular-code-overview) 
   - [Data Generation](#data-generation)
   - [AWS Infrastructure](#aws-infrastructure) 
   - [Data Processing](#data-processing)
