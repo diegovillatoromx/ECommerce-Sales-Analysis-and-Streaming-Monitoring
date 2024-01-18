@@ -29,7 +29,7 @@ The **ECommerce Sales Analysis and Streaming Monitoring** project aims to addres
 
 - **Machine Learning and Predictive Analysis:** This project can serve as a foundation for the implementation of machine learning models and predictive analysis in the future. Real-time analysis of sales data can be used to train models that help predict product demand, price optimization, and customer experience personalization.
 
-- **E-commerce Competitiveness:** In a highly competitive global e-commerce market, the ability to analyze and act on data quickly and accurately is a differentiating factor. Businesses that can offer more personalized and efficient products and experiences have a competitive edge.
+- **E-commerce Competitiveness:** In a highly competitive global e-commerce market, the ability to analyze and act on data quickly and accurately is a differentiating factor. Businesses that can offer more personalized and efficient products and experiences have a competitive edge. 
 
 - **Data-Driven Decision-Making:** Automation and real-time analysis enable data-driven, informed decision-making instead of relying on assumptions or delayed reactions. This can have a significant impact on profitability and business growth.
 
