@@ -1,0 +1,21 @@
+{
+    "aws_access_key_id": "YOUR_ACCESS_KEY",
+    "aws_secret_access_key": "YOUR_SECRET_KEY",
+    "region_name": "us-east-1",
+    "firehose_name": "KDS-s3-ecommerce",
+    "firehose_config": {
+        "RecordFormat": "ENABLED",
+        "RecordFormatConversion": "APACHE_PARQUET"
+    },
+    "schema_config": {
+        "Region": "us-east-1",
+        "DatabaseName": "ecommerce_kinesis_DB",
+        "TableName": "EcommerceTableKinesis"
+    },
+    "s3_destination_config": {
+        "BucketARN": "arn:aws:s3:::data_stream_ingestion_useast1",
+        "Prefix": "Data_Stream_Ingestion_USeast1/year=!{timestamp:YYYY}/month=!{timestamp:MM}/day=!{timestamp:dd}/hour=!{timestamp:HH}/",
+        "ErrorOutputPrefix": "Data_Stream_Ingestion_USeast1/!{firehose:error-output-type}/year=!{timestamp:YYYY}/month=!{timestamp:MM}/day=!{timestamp:dd}/hour=!{timestamp:HH}/"
+    },
+    "buffer_interval": 60
+}

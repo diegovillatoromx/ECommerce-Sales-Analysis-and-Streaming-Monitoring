@@ -1,0 +1,11 @@
+{
+  "region_name": "us-east-1",  // The AWS region in which you want to create the database and table
+  "aws_access_key_id": "YOUR_ACCESS_KEY_ID",  // Your AWS Access Key ID
+  "aws_secret_access_key": "YOUR_SECRET_ACCESS_KEY",  // Your AWS Secret Access Key
+  "database_name": "ecommerce_kinesis_DB",  // The name of the database you want to create
+  "table_name": "EcommerceTableKinesis",  // The name of the table you want to create
+  "location": "s3://data_stream_ingestion_useast1/ecommerce_kinesis_DB/",  // The location of the table data on S3
+  "table_input_format": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat",  // The input format for reading data
+  "table_output_format": "org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat",  // The output format for writing data
+  "serde_library": "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe"  // The SerDe library for working with Parquet data
+}
