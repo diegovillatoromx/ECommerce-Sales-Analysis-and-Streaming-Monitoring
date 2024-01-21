@@ -1,4 +1,4 @@
-import json
+import json 
 import boto3
 from purchase_data_generation import generate_purchase_data
 
