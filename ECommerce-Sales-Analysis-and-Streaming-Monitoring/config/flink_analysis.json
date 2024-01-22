@@ -1,0 +1,9 @@
+{
+    "application_name": "flink_analysis_processing",
+    "input_stream_name": "data_stream_pipeline_ingestion_useast1",
+    "input_stream_arn": "ARN_OF_THE_FIRST_STREAM",
+    "input_role_arn": "YOUR_ROLE_ARN",
+    "output_stream_name": "data_stream_pipeline_processing_useast1",
+    "output_stream_arn": "ARN_OF_THE_SECOND_STREAM",
+    "output_role_arn": "YOUR_ROLE_ARN"
+}
