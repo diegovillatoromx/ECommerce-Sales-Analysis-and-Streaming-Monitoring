@@ -2,7 +2,7 @@
 As a Senior Data Engineer specializing in AWS, I have designed the "ECommerce Sales Analysis and Streaming Monitoring" project to empower e-commerce businesses with real-time data-driven insights and agile decision-making capabilities. This project addresses the c ritical need to collect, process, and analyze sales data from an e-commerce website in real time, leveraging the robust capabilities of AWS cloud services. 
   
 ## Table of Contents 
- 
+  
 - [Description](#description) 
 - [Architecture](#architecture)
 - [Dataset](#dataset)
