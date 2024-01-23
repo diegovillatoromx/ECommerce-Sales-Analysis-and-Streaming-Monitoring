@@ -23,7 +23,7 @@ CREATE TABLE your_stream_name (
 PARTITIONED BY (USER_ID)  -- Partitioned by USER_ID
 WITH (
   'connector' = 'kinesis',
-  'stream' = 'your_kinesis_stream_name',
+  'stream' = 'data_stream_pipeline_ingestion_useast1',
   'aws.region' = 'your_aws_region',
   'scan.stream.initpos' = 'LATEST',
   'format' = 'json',
@@ -62,7 +62,7 @@ CREATE TABLE OutputDataStream (
 )
 WITH (
   'connector' = 'kinesis',
-  'stream' = 'your_output_kinesis_stream_name',
+  'stream' = 'data_stream_pipeline_processing_useast1',
   'aws.region' = 'your_aws_region',
   'format' = 'json',
   'json.timestamp-format.standard' = 'ISO-8601'
