@@ -1,10 +1,79 @@
 {
     "application_name": "flink_analysis_processing",
+    "aws.region": "us-east-1",
     "input_stream_name": "data_stream_pipeline_ingestion_useast1",
-    "input_stream_arn": "ARN_DEL_PRIMER_FLUJO",
-    "input_role_arn": "ARN_DE_TU_ROL",
+    "input_stream_arn": "ARN_OF_THE_FIRST_STREAM",
+    "input_role_arn": "YOUR_ROLE_ARN",
     "output_stream_name": "data_stream_pipeline_processing_useast1",
-    "output_stream_arn": "ARN_DEL_SEGUNDO_FLUJO",
-    "output_role_arn": "ARN_DE_TU_ROL",
-    "log_stream_arn": "ARN_DEL_LOG_STREAM"
+    "output_stream_arn": "ARN_OF_THE_SECOND_STREAM",
+    "output_role_arn": "YOUR_ROLE_ARN",
+    "code_s3_location": "s3://your-bucket/code.zip",  # Replace with your code location in S3
+    "requirements_s3_location": "s3://your-bucket/requirements.txt",  # Replace with your requirements file location in S3
+    "venv_s3_location": "s3://your-bucket/venv.zip",  # Replace with your virtual environment location in S3
+    "input_columns": [
+        {
+            "Name": "purchase_ID",
+            "Type": "VARCHAR(50)"
+        },
+        {
+            "Name": "Product_name",
+            "Type": "VARCHAR(50)"
+        },
+        {
+            "Name": "Pricing",
+            "Type": "DECIMAL(10, 2)"
+        },
+        {
+            "Name": "Commission",
+            "Type": "DECIMAL(10, 2)"
+        },
+        {
+            "Name": "Revenue",
+            "Type": "DECIMAL(10, 2)"
+        },
+        {
+            "Name": "Payment_Method",
+            "Type": "VARCHAR(50)"
+        },
+        {
+            "Name": "Status",
+            "Type": "VARCHAR(50)"
+        },
+        {
+            "Name": "Order_Type",
+            "Type": "VARCHAR(50)"
+        },
+        {
+            "Name": "City",
+            "Type": "VARCHAR(50)"
+        },
+        {
+            "Name": "Latitude",
+            "Type": "DECIMAL(10, 6)"
+        },
+        {
+            "Name": "Longitude",
+            "Type": "DECIMAL(10, 6)"
+        },
+        {
+            "Name": "Source",
+            "Type": "VARCHAR(50)"
+        },
+        {
+            "Name": "Brand",
+            "Type": "VARCHAR(50)"
+        },
+        {
+            "Name": "Category",
+            "Type": "VARCHAR(50)"
+        },
+        {
+            "Name": "Created_at",
+            "Type": "TIMESTAMP(3)"
+        },
+        {
+            "Name": "USER_ID",
+            "Type": "VARCHAR(10)"
+        }
+    ]
 }
