@@ -39,7 +39,7 @@ SELECT
    Product_name,
    COUNT(*) AS TotalSales
 FROM
-   data_stream_pipeline_ingestion_useast1
+   data_stream_pipeline_ingestion_useast1 
 WHERE
    Order_Type = 'ONLINE'
    AND Status = 'COMPLETED'
