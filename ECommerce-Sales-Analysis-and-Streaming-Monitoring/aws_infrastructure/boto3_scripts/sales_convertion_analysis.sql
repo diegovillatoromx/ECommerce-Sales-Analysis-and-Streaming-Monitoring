@@ -1,7 +1,7 @@
 -- Opción 'IF NOT EXISTS' puede usarse para proteger el esquema existente
-DROP TABLE IF EXISTS your_stream_name;
+DROP TABLE IF EXISTS data_ecommerce_analysis;
 
-CREATE TABLE your_stream_name (
+CREATE TABLE data_ecommerce_analysis (
   `purchase_ID` VARCHAR(50), 
   `Product_name` VARCHAR(50), 
   `Pricing` DECIMAL(10, 2), 
@@ -24,7 +24,7 @@ PARTITIONED BY (USER_ID)  -- Partitioned by USER_ID
 WITH (
   'connector' = 'kinesis',
   'stream' = 'data_stream_pipeline_ingestion_useast1',
-  'aws.region' = 'your_aws_region',
+  'aws.region' = 'us-east1',
   'scan.stream.initpos' = 'LATEST',
   'format' = 'json',
   'json.timestamp-format.standard' = 'ISO-8601'
@@ -39,7 +39,7 @@ SELECT
    Product_name,
    COUNT(*) AS TotalSales
 FROM
-   your_stream_name
+   data_stream_pipeline_ingestion_useast1
 WHERE
    Order_Type = 'ONLINE'
    AND Status = 'COMPLETED'
@@ -51,32 +51,32 @@ SELECT
     DATE_TRUNC('HOUR', CAST(Created_at AS TIMESTAMP)) AS Hour,
     SUM(CASE WHEN Status = 'COMPLETED' THEN 1 ELSE 0 END) / COUNT(*) AS ConversionRate
 FROM
-    your_stream_name
+    data_stream_pipeline_ingestion_useast1
 GROUP BY
     Hour;
 
 -- Define your output Kinesis stream for results
-CREATE TABLE OutputDataStream (
+CREATE TABLE convertion_rate_analysis (
   `Result` ROW<EventType VARCHAR(50), Count BIGINT>, -- Define the schema for the output data
   WATERMARK FOR Created_at AS CURRENT_TIMESTAMP
 )
 WITH (
   'connector' = 'kinesis',
   'stream' = 'data_stream_pipeline_processing_useast1',
-  'aws.region' = 'your_aws_region',
+  'aws.region' = 'us-east1',
   'format' = 'json',
   'json.timestamp-format.standard' = 'ISO-8601'
 );
 
 -- Send SalesByProduct results to OutputDataStream
-INSERT INTO OutputDataStream
+INSERT INTO data_stream_pipeline_processing_useast1
 SELECT
     ROW('SalesByProduct', Product_name, TotalSalesByProduct)
 FROM
     SalesByProduct;
 
 -- Send ConversionRate results to OutputDataStream
-INSERT INTO OutputDataStream
+INSERT INTO data_stream_pipeline_processing_useast1
 SELECT
     ROW('ConversionRate', Hour, ConversionRate)
 FROM
