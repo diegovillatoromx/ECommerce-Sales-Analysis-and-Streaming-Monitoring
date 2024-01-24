@@ -1,7 +1,14 @@
 #!/bin/bash
 
-# Lambda function name
-function_name="YourLambdaFunctionName"
+# Load configuration variables from lambda_config.json
+config_file="aws_infrastructure/cli_scripts/config/lambda_config.json"
+
+if [ -f $config_file ]; then
+  source $config_file
+else
+  echo "Error: lambda_config.json not found. Make sure the file exists and is correctly configured."
+  exit 1
+fi
 
 # Python file name (without extension)
 python_file="lambda_function"
@@ -9,30 +16,30 @@ python_file="lambda_function"
 # Resulting ZIP file name
 zip_file="$python_file.zip"
 
-# Path to the configuration JSON file
-config_file="aws_infrastructure/cli_scripts/config/lambda_config.json"
-
-# Path to the Python file
-python_code="$python_file.py"
-
 # Directory path where the ZIP file will be stored
 output_dir="./"
 
+# Lambda execution role ARN (from lambda_config.json)
+lambda_execution_role_arn=$lambda_execution_role_arn
+
+# Data Stream ARN (from lambda_config.json)
+data_stream_arn=$data_stream_arn
+
 # Compress the Python file into a ZIP
-zip -j $output_dir$zip_file $python_code
+zip -j $output_dir$zip_file $python_file.py
 
 # Create the Lambda function
 aws lambda create-function \
   --function-name $function_name \
   --runtime python3.8 \
   --handler $python_file.lambda_handler \
-  --role YourLambdaExecutionRoleARN \
+  --role $lambda_execution_role_arn \
   --zip-file fileb://$output_dir$zip_file
 
 # Configure the Data Stream trigger
 aws lambda create-event-source-mapping \
   --function-name $function_name \
-  --event-source-arn arn:aws:kinesis:us-east-1:YOUR_ACCOUNT_ID:stream/data_stream_pipeline_processing_useast1 \
+  --event-source-arn $data_stream_arn \
   --batch-size 10 \
   --starting-position LATEST
 
