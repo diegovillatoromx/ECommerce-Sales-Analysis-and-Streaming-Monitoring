@@ -44,8 +44,8 @@ The architecture of this project is designed to be highly scalable, resilient, a
 
 - A Python script (`app_simulation.py`) simulates sales data, generating continuous events representative of an e-commerce website's activities.
 - Dependencies for the script are documented in the `requirements.txt` file.
-- You can find more details [here](https://github.com/diegovillatoromx/ECommerce-Sales-Analysis-and-Streaming-Monitoring/blob/main/ecommerce_monitoring.png).
-
+- You can find more details [here](https://github.com/diegovillatoromx/Ecommerce-Simulation-Dataset).
+  
 ### Data Ingestion and Processing
 
 - **Kinesis Data Streams:** Two Kinesis Data Streams, one for raw data and another for processed data, enable real-time ingestion and processing of sales events. This segmentation allows us to isolate failures, manage workloads independently, and prepare for handling large data volumes in the future.
