@@ -1,0 +1,7 @@
+{
+  "cloudwatch_namespace": "YourCloudWatchNamespace",
+  "cloudwatch_metric": "YourCloudWatchMetric",
+  "topic_arn": "YourSNSTopicARN",
+  "lambda_execution_role_arn": "YourLambdaExecutionRoleARN",
+  "data_stream_arn": "arn:aws:kinesis:us-east-1:YOUR_ACCOUNT_ID:stream/data_stream_pipeline_processing_useast1"
+}
