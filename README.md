@@ -44,7 +44,6 @@ The architecture of this project is designed to be highly scalable, resilient, a
 
 - A Python script (`app_simulation.py`) simulates sales data, generating continuous events representative of an e-commerce website's activities.
 - Dependencies for the script are documented in the `requirements.txt` file.
-- You can find more details [here](https://github.com/diegovillatoromx/Ecommerce-Simulation-Dataset).
   
 ### Data Ingestion and Processing
 
