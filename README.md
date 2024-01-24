@@ -39,7 +39,7 @@ In summary, "ECommerce Sales Analysis and Streaming Monitoring" is a project tha
 ## Architecture
 
 The architecture of this project is designed to be highly scalable, resilient, and modular. It encompasses the following key components:
-
+![image](https://github.com/diegovillatoromx/ECommerce-Sales-Analysis-and-Streaming-Monitoring/blob/main/ecommerce_monitoring.png)
 ### Data Generation
 
 - A Python script (`app_simulation.py`) simulates sales data, generating continuous events representative of an e-commerce website's activities.
