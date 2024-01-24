@@ -22,7 +22,7 @@ As a Senior Data Engineer specializing in AWS, I have designed the "ECommerce Sa
 The **ECommerce Sales Analysis and Streaming Monitoring** project aims to address a critical need in the world of online businesses: the ability to analyze and monitor the real-time performance of an e-commerce website. In a highly competitive and dynamic e-commerce environment, agile, data-driven decision-making is paramount to success.
  
 ### Key Highlights:
-
+ 
 - **Real-Time Analysis:** In today's e-commerce landscape, speed is of the essence. Sales data, product trends, and user behavior can change within minutes. This project enables real-time analysis of sales data, empowering businesses to make informed decisions and proactively respond to market trends and challenges.
 
 - **Cloud Automation:** Automation plays a critical role in efficiently managing workflows and resources in the cloud. AWS (Amazon Web Services) infrastructure provides a scalable and highly automated platform that allows organizations to adapt quickly to changing demands. Cloud automation enables automatic configuration, provisioning, and scalability of resources, saving time and reducing operational costs.
