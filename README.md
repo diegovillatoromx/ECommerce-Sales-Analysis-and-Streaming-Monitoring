@@ -91,6 +91,9 @@ In conclusion, the "ECommerce Sales Analysis and Streaming Monitoring" project, 
 
 ## Dataset
 
+This project is dedicated to generating a high-fidelity simulated dataset for an ecommerce platform specializing in computers and video games. The dataset aims to mirror real-world transactional data, providing a robust foundation for analytics, machine learning models, and data architecture simulation. You can find more details [here](https://github.com/diegovillatoromx/Ecommerce-Simulation-Dataset).
+
+
 ## Methodology
 
 The methodology adopted for the "ECommerce Sales Analysis and Streaming Monitoring" project follows a well-defined workflow to ensure the efficient and accurate handling of sales data. The methodology can be broken down into the following steps:
