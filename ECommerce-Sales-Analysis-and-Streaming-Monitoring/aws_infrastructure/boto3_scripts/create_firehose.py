@@ -2,7 +2,7 @@ import boto3
 import json
 
 # Load variables from the JSON configuration file
-with open('config.json', 'r') as config_file:
+with open('config.json', 'r') as config_file: 
     config = json.load(config_file)
 
 # Create a client for Kinesis Data Firehose
