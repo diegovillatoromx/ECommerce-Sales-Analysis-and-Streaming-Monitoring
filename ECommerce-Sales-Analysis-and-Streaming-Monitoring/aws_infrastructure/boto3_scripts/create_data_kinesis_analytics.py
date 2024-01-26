@@ -1,6 +1,6 @@
 import boto3
 import json 
-
+ 
 # Load configurations from the JSON file
 with open('config.json') as config_file:
     config = json.load(config_file)
