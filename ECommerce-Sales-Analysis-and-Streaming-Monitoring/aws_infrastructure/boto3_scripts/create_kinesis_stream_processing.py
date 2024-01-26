@@ -7,7 +7,7 @@ config_file = 'config/kinesis_processing_config.json'
 with open(config_file, 'r') as f:
     config = json.load(f)
 
-stream_name = config['stream_name']
+stream_name = config['stream_name'] 
 region_name = config['region_name']
 aws_access_key_id = config['aws_access_key_id']
 aws_secret_access_key = config['aws_secret_access_key']
