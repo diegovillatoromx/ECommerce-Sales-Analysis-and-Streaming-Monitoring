@@ -5,7 +5,7 @@ import json
 config_file = 'config/glue_config.json' 
 with open(config_file, 'r') as f:
     config = json.load(f)
-
+ 
 # Initialize Glue client
 glue_client = boto3.client('glue', 
     region_name=config['region_name'], 
