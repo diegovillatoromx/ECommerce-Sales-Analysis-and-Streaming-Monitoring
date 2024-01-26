@@ -1,5 +1,5 @@
 import boto3
-import json
+import json 
 
 # Load configurations from the JSON file
 with open('config.json') as config_file:
