@@ -57,6 +57,8 @@ The architecture of this project is designed to be highly scalable, resilient, a
 
 - **AWS Glue:** AWS Glue is utilized for data transformation, schema creation, and preparation for further analysis.
 
+  ![image](https://github.com/diegovillatoromx/ECommerce-Sales-Analysis-and-Streaming-Monitoring/blob/main/schema-snowflake.png)
+
 - **Amazon Athena:** Amazon Athena allows for ad-hoc SQL queries on data stored in the S3 bucket, enabling interactive analysis and insights extraction.
 
 ### Monitoring and Visualization
