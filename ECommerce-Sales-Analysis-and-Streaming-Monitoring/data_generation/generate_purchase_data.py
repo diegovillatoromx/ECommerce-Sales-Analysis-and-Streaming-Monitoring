@@ -2,7 +2,7 @@ import json
 import boto3 
 from purchase_data_generation import generate_purchase_data
 
-stream_name = 'YOUR_DATA_STREAM_NAME'   
+stream_name = 'YOUR_DATA_STREAM_NAME'  
 region = 'us-east-1'
 KinesisClient = boto3.client('kinesis', region_name=region)
 
