@@ -1,5 +1,5 @@
 import json 
-import boto3
+import boto3 
 from purchase_data_generation import generate_purchase_data
 
 stream_name = 'YOUR_DATA_STREAM_NAME'   
