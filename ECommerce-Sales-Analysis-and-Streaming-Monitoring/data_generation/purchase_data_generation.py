@@ -3,7 +3,7 @@ import random
 import hashlib 
 import time
 from datetime import datetime, timedelta
- 
+  
 # Initial configuration data 
 cities = ['Bogotá', 'Medellín', 'Cali', 'Bucaramanga', 'Barranquilla']
 products = ['Dell Laptop', 'HP Laptop', 'Lenovo Laptop', 'PlayStation', 'Xbox', 'Nintendo Switch']
