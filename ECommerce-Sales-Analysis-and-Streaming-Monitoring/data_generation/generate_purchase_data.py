@@ -4,7 +4,7 @@ from purchase_data_generation import generate_purchase_data
 
 stream_name = 'YOUR_DATA_STREAM_NAME'  
 region = 'us-east-1'
-KinesisClient = boto3.client('kinesis', region_name=region)
+KinesisClient = boto3.client('kinesis', region_name=region) 
 
 # Generate purchase data
 purchase_data = generate_purchase_data(1000)  # Generate 100 purchase records
