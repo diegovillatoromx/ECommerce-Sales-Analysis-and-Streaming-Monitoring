@@ -1,5 +1,5 @@
 #!/bin/bash
-
+ 
 # Load configuration variables from lambda_config.json
 config_file="aws_infrastructure/cli_scripts/config/lambda_config.json"
 
