@@ -1,4 +1,4 @@
-{
+{ 
   "stream_name": "data_stream_pipeline_ingestion_useast1",
   "region_name": "us-east-1",
   "aws_access_key_id": "YOUR_ACCESS_KEY_ID", 
