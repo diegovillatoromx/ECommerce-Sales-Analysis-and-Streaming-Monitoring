@@ -3,7 +3,7 @@ import base64
 import json
 import boto3 
 import os
-
+ 
 # OS input variables:
 cloudwatch_namespace = os.environ['cloudwatch_namespace']
 cloudwatch_metric = os.environ['cloudwatch_metric']
