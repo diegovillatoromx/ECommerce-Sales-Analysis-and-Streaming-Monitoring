@@ -1,4 +1,4 @@
-import boto3
+import boto3 
 import json 
  
 # Load configurations from the JSON file 
