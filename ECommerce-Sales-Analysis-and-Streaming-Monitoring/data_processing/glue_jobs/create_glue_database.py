@@ -1,6 +1,6 @@
 import boto3 
 import json
-
+ 
 # Read configuration from JSON file
 config_file = 'config/glue_config.json' 
 with open(config_file, 'r') as f:
