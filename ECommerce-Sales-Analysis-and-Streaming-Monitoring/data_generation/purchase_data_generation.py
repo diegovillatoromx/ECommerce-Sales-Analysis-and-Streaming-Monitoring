@@ -2,7 +2,7 @@ import pandas as pd
 import random 
 import hashlib   
 import time  
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta 
   
 # Initial configuration data 
 cities = ['Bogotá', 'Medellín', 'Cali', 'Bucaramanga', 'Barranquilla']
