@@ -1,4 +1,4 @@
-{ 
+{  
     "application_name": "flink_analysis_processing",
     "aws.region": "us-east-1",
     "input_stream_name": "data_stream_pipeline_ingestion_useast1",
