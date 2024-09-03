@@ -1,4 +1,4 @@
-{ 
+{  
   "region_name": "us-east-1",  // The AWS region in which you want to create the database and table
   "aws_access_key_id": "YOUR_ACCESS_KEY_ID",  // Your AWS Access Key ID
   "aws_secret_access_key": "YOUR_SECRET_ACCESS_KEY",  // Your AWS Secret Access Key
