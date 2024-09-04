@@ -1,6 +1,6 @@
 import boto3
 import json 
-
+ 
 # Read configuration from the JSON file
 config_file = 'config/kinesis_ingestion_config.json'
 
