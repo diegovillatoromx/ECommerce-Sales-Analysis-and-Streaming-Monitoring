@@ -1,5 +1,5 @@
 import boto3 
-
+ 
 # Read S3 configuration from the JSON file
 config_file = 'config/s3_config.json' 
 
