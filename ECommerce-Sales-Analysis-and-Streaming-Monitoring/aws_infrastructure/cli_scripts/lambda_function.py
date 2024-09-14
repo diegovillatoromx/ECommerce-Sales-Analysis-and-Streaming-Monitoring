@@ -2,7 +2,7 @@ from aws_kinesis_agg.deaggregator import iter_deaggregate_records
 import base64 
 import json
 import boto3 
-import os
+import os 
  
 # OS input variables:
 cloudwatch_namespace = os.environ['cloudwatch_namespace']
