@@ -1,4 +1,4 @@
-{ 
+{
   "cloudwatch_namespace": "YourCloudWatchNamespace",
   "cloudwatch_metric": "YourCloudWatchMetric",
   "topic_arn": "YourSNSTopicARN",
