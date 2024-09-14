@@ -1,6 +1,6 @@
 -- Opción 'IF NOT EXISTS' puede usarse para proteger el esquema existente
 DROP TABLE IF EXISTS data_ecommerce_analysis;
-  
+ 
 CREATE TABLE data_ecommerce_analysis (
   `purchase_ID` VARCHAR(50), 
   `Product_name` VARCHAR(50), 
