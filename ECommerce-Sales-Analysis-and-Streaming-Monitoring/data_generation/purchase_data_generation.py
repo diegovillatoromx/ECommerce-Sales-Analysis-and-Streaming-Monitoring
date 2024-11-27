@@ -4,7 +4,7 @@ import hashlib
 import time
 from datetime import datetime, timedelta 
   
-# Initial configuration data 
+# Initial configuration data  
 cities = ['Bogotá', 'Medellín', 'Cali', 'Bucaramanga', 'Barranquilla']
 products = ['Dell Laptop', 'HP Laptop', 'Lenovo Laptop', 'PlayStation', 'Xbox', 'Nintendo Switch']
 purchase_statuses = ['COMPLETED', 'FAILED_CHECKOUT', 'FAILED_API_RESPONSE', 'INSUFFICIENT_FUNDS', 'USER_ERROR', 'FRAUD', 'COMPLETED']
